@@ -1,0 +1,14 @@
+extends ./main.jade
+
+block main
+  #posts
+    h1 These are all my posts
+    if posts && posts.length > 0
+      h2 There are #{posts.length} posts here
+      each post in posts
+        .postContent
+          h3
+            a(href="/#{post.path}")!= post.title
+          div!= post.excerpt
+    else
+      #noPosts Sorry, no posts found!

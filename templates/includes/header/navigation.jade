@@ -1,0 +1,13 @@
+nav
+  .container-fluid
+    .row
+      .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-8.col-xs-offset-2
+        nav.pull
+          ul.top-nav
+            //- The site.navigation collection is a dictionary of {name: href}
+            each href, name in site.navigation
+              li
+                a(href='#{href}')
+                  | #{name} 
+                  span.indicator
+                    i.fa.fa-angle-right

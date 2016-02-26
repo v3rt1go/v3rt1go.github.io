@@ -1,0 +1,31 @@
+block meta
+  meta(name="keywords", content="#{meta_keywords ? meta_keywords : site.meta_keywords}")
+  meta(name="description", content="#{meta_description ? meta_description : site.meta_description}")
+  meta(name="author", content="#{meta_author ? meta_author : site.meta_author}")
+  meta(property="og:title", content="#{og_title ? og_title : site.og_title}")
+  meta(property="og:locale", content="#{og_locale ? og_locale : site.og_locale}")
+  meta(property="og:description", content="#{og_description ? og_description : site.og_description}")
+  meta(property="og:url", content="#{og_url ? og_url : site.og_url}")
+  meta(property="og:image", content="#{og_thumb ? og_thumb : site.og_thumb}")
+  meta(property="og:site_name", content="#{og_sitename ? og_sitename : site.og_sitename}")
+  meta(property="og:type", content="#{og_type ? og_type : site.og_type}")
+  
+  link(rel='shortcut icon', href='public/favicon.ico' type="image/x-icon")
+  link(rel='icon', href='public/favicon.ico' type="image/x-icon")
+block headscripts
+  link(href='http://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet', type='text/css')
+  link(href='public/assets/css/bootstrap.min.css', rel='stylesheet')
+  link(href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet')
+  link(href='public/assets/css/flexslider.css', rel='stylesheet')
+  link(href='public/assets/css/styles.css', rel='stylesheet')
+  link(href='public/assets/css/queries.css', rel='stylesheet')
+  link(href='public/assets/css/animate.css', rel='stylesheet')
+  //link(href='public/assets/css/pesticide.css', rel='stylesheet')
+
+  // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+  // WARNING: Respond.js doesn't work if you view the page via file://
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  script(src="//load.sumome.com/" data-sumo-site-id="6de6376901838a5dd0bf9bb62e1c037fc460eeb890f397bffc298fe6c4307af0" async="async")

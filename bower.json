@@ -1,0 +1,24 @@
+{
+  "name": "reactfundamental",
+  "version": "0.0.1",
+  "homepage": "https://github.com/v3rt1go/reactfundamental",
+  "authors": [
+    "Alex Griciuc <agriciuc@outlook.com>"
+  ],
+  "description": "code for react fundamentals course on pluralsight",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.3"
+  }
+}

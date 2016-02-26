@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "indent": [2, 2],
+    "quotes": 0,
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "always"],
+    "wrap-iife": [2, "outside"],
+    "filenames/filenames": 2,
+    "no-console": 0
+  },
+  "env": {
+    "node":     true
+  },
+  "plugins": ["filenames"],
+  "extends": ["eslint:recommended"],
+  "globals": {
+  }
+}

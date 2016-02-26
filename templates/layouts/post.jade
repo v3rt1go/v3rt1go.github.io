@@ -1,0 +1,15 @@
+extends ./main.jade
+
+block main
+  - var pubDate = moment(publishDate, dateFormat);
+  - var modDate = moment(modifyDate, dateFormat);
+  article#article
+    h1= title
+    h3 Some subtitle goes here sasddasd foo bar baz again
+    #author By #{author} | Published on #{pubDate.format('D.M.YYYY')}.
+      if modifyDate && modDate.isAfter(pubDate)
+        small Updated on #{modDate.format('D.M.YYYY')}.
+    hr
+    #excerpt
+      p This is the excerpt: !{excerpt}
+    #contents!= contents

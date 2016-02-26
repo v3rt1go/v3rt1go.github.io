@@ -1,0 +1,12 @@
+doctype
+html
+  head
+    title= title ? title + " | " + site.title : site.title
+    
+    include ../includes/head.jade
+    block head
+  body
+    h1 My super cool hero banner from default
+    block main
+    
+    include ../includes/footer.jade
