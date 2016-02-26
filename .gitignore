@@ -15,8 +15,9 @@ todo.txt
 !/upload/data/README.md
 !/upload/images/README.md
 
-# Ignore build folder
-build
+# We need the build folder in git in order to checkout it's content from
+# development to master branch (publish)
+# build
 
 # Ignore typings folder
 typings
